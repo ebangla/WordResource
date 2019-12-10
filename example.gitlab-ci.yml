@@ -1,0 +1,13 @@
+image: alpine:latest
+
+pages:
+  timeout: 3 hours 30 minutes
+  stage: deploy
+  script:
+    - echo 'nothing to do'
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
